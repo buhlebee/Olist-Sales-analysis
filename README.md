@@ -20,6 +20,9 @@ This project analyses sales performance for the Olist Brazilian e-commerce marke
 
 ### Final Dashboard
 ![Final Dashboard](Screenshots/Final%20Dashboard.png)
+### Slicer Interaction
+![Dashboard preview](Screenshots/Dashboard%20preview.gif)
+*Year and month slicers filtering the dashboard's KPI and monthly chart live.*
 
 ## What I Did
 
@@ -34,7 +37,7 @@ Before cleaning the data, I checked for missing values, duplicates, and inconsis
 I used `COUNT()` to compare the rows and look for NULL values, and also used a `HAVING COUNT(*) > 1` variation to check for duplicates among single columns and columns that go together, e.g. `(order_id, payment_sequential)`.
 
 I found:
-- No duplicate keys in the dataset
+- No duplicates found in the dataset
 - Missing delivery dates were mostly linked to cancelled or unavailable orders
 - Some products were missing category information or physical dimensions
 
@@ -69,9 +72,9 @@ I decided to limit the charts to the top 15 categories, as there were too many c
 
 ## Project Files
 
-- `raw_to_clean.sql` — table creation, data checks, and cleaning
-- `views_for_calculations.sql` — analysis views
-- `Olist sales analysis.xlsx` — final dashboard
+- `SQL/raw_to_clean.sql` — table creation, data checks, and cleaning
+- `SQL/views_for_calculations.sql` — analysis views
+- `excel/Olist sales analysis.xlsx` — final dashboard
 
 ## Limitations
 
