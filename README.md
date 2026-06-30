@@ -71,7 +71,7 @@ I decided to limit the charts to the top 15 categories, as there were too many c
 
 - `raw_to_clean.sql` — table creation, data checks, and cleaning
 - `views_for_calculations.sql` — analysis views
-- `excel/Olist sales analysis.xlsx` — final dashboard
+- `Olist sales analysis.xlsx` — final dashboard
 
 ## Limitations
 
